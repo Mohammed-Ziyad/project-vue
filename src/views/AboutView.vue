@@ -1,6 +1,8 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="">
+    <h1>This The page Not found</h1>
+    <WelcomeMessage />
+
   </div>
 </template>
 
@@ -13,3 +15,7 @@
   }
 }
 </style>
+
+<script setup>
+import WelcomeMessage from '@/components/myApp.vue'
+</script>
