@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import Help from '../views/help.vue';
 import tableComponent from '../views/tableComponent.vue';
+import BlogComponent from '../views/BlogComponent.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component:AboutView
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component:BlogComponent
     },
     {
         path: '/help',

@@ -17,7 +17,6 @@
     <td>Griffin</td>
   </tr>
 </table>
-  <WelcomeMessage/>
     </div>
   </template>
   <style>
@@ -27,5 +26,4 @@
   </style>
 <script setup>
 
-import WelcomeMessage from '@/components/myApp.vue'
 </script>

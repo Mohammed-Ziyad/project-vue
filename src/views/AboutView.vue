@@ -1,21 +1,23 @@
 <template>
   <div class="">
-    <h1>This The page Not found</h1>
-    <WelcomeMessage />
-
+    <h1>{{ pageName }}</h1>
+    <p>{{ pageDescription }}</p>
+    
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+
 </style>
 
-<script setup>
-import WelcomeMessage from '@/components/myApp.vue'
+<script >
+    export default {
+        data: function()
+      {
+          return {
+            pageName:'About Us' ,
+            pageDescription:'This is About Us page'
+        }
+    }
+    }
 </script>

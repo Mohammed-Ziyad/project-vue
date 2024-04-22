@@ -5,23 +5,28 @@ export default {
 </script>
 <template>
     <div class="header">
-        <!-- <div class="logo">Mohammed</div> -->
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+        <div class="">
 
-        <ul >
-            <router-Link to="/" tag="li" exact>
-                <a>Home</a>
-            </router-Link>
-            <routerLink to="/about" tag="li">
-                <a>About</a>
-            </routerLink>
-            <routerLink to="/help" tag="li" replace>
-                <a >Help</a>
-            </routerLink>
-            <routerLink to="/table" tag="li" replace>
-                <a >Table</a>
-            </routerLink>
-        </ul>
+            <div class="logo">Mohammed</div>
+    
+            <ul class="text-right" >
+                <router-Link to="/" tag="li" exact>
+                    <a>Home</a>
+                </router-Link>
+                <router-Link to="/blog" tag="li" >
+                    <a>Blog</a>
+                </router-Link>
+                <routerLink to="/about" tag="li">
+                    <a>About</a>
+                </routerLink>
+                <routerLink to="/help" tag="li" >
+                    <a >Help</a>
+                </routerLink>
+                <routerLink to="/table" tag="li" >
+                    <a >Table</a>
+                </routerLink>
+            </ul>
+        </div>
     </div>
 
 </template>
@@ -36,7 +41,7 @@ export default {
 
     .logo{
         font-size: 24px;
-        padding: 20px;
+        // padding: 20px;
         float:left;
         width: 200px;
     }
