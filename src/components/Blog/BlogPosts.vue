@@ -1,5 +1,5 @@
 <template>
-    <div class="post">
+    <div class="post-لاخء">
         Testing Post 
     </div>
 </template>
