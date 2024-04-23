@@ -9,7 +9,18 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="post-area">
-                <BlogPosts />
+                <BlogPosts 
+                v-for="post in posts " 
+                :key="post.id"
+                :views="post.views"
+                :title="post.title"
+                :date="post.date"
+                :content="post.content"
+                :auther="post.auther"
+                :category="post.category"
+
+                
+                />
                 
                 </div>
             </div>
@@ -27,6 +38,7 @@
 <script setup>
 import BlogPosts  from '@/components/Blog/BlogPosts.vue';
 import BlogSidebar from '../components/Blog/BlogSidebar.vue';
+import JsonPosts from '../json/blog_post.json'
  
 </script>
 <script>
@@ -35,7 +47,8 @@ import BlogSidebar from '../components/Blog/BlogSidebar.vue';
       {
           return {
             pageName:'Blog' ,
-            pageDescription:'This is Blog page'
+            pageDescription:'This is Blog page',
+            posts:JsonPosts
         }
     },
     // name :'blogComponent',
