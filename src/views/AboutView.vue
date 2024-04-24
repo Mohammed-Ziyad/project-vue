@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div class="text-center"> 
     <h1>{{ pageName }}</h1>
-    <p>{{ pageDescription }}</p>
+    <p v-font="'60'">{{ pageDescription }}</p>
     
   </div>
 </template>
@@ -19,5 +19,13 @@
             pageDescription:'This is About Us page'
         }
     }
+    }
+   
+</script>
+<script setup>
+ const vFont={
+        mounted:(el , binding)=>{
+            el.style.fontSize= binding.value +'px';
+        }
     }
 </script>

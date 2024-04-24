@@ -1,7 +1,8 @@
 
 <template>
     <div class="our-blog">
-        
+        <div v-highlight="'yellow'" arg="red">Hover me!</div>
+
         <h1>{{ pageName }}</h1>
     <p>{{ pageDescription }}</p>
 
@@ -39,6 +40,28 @@ import BlogPosts  from '@/components/Blog/BlogPosts.vue';
 import BlogSidebar from '../components/Blog/BlogSidebar.vue';
 import JsonPosts from '../json/blog_post.json'
  
+// app.directive('highlight', {
+//     bind(el, binding) {
+//       el.style.backgroundColor = binding.value;
+//       el.addEventListener('mouseenter', function() {
+//         this.style.backgroundColor = binding.arg;
+//       });
+//       el.addEventListener('mouseleave', function() {
+//         this.style.backgroundColor = binding.value;
+//       });
+//     }
+//   });
+  const vHighlight={
+    mounted:(el , binding) => {
+        el.style.backgroundColor = binding.value;
+      el.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = binding.arg;
+      });
+      el.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = binding.value;
+      });
+    }
+  }
 </script>
 <script>
   export default {
@@ -57,4 +80,6 @@ import JsonPosts from '../json/blog_post.json'
         
     }
     }
+    
 </script>
+
