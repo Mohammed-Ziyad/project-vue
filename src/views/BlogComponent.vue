@@ -18,7 +18,6 @@
                 :content="post.content"
                 :auther="post.auther"
                 :category="post.category"
-
                 
                 />
                 
@@ -26,7 +25,10 @@
             </div>
             <div class="col-md-4">
                 <div class="sidebar">
-                    <BlogSidebar/>
+                    <BlogSidebar v-for="post in posts "
+                     v-bind:key="post.id"
+                     :title="post.title"
+                     />
                 </div>
             </div>
         </div>

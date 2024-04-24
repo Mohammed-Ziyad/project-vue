@@ -9,7 +9,7 @@
             <span class="post-author">{{ auther }}</span>
         </div>
         <div class="col-sm-6 text-right">
-            <span class="post-category"> {{ category }} </span>
+            <span class="post-category"> {{ uppercaseCategory }} </span>
         </div>
        </div>
     </div>
@@ -17,8 +17,15 @@
 <script>
 export default {
     props:['views' , 'title' , 'date' , 'content' , 'auther' , 'category'],
-    name:'postBlog'
+    name:'postBlog',
+   
+    computed: {
+        uppercaseCategory() {
+            return this.category.toUpperCase();
+        }
+    }, 
 }
+
 </script>
 
 
