@@ -25,10 +25,7 @@
             </div>
             <div class="col-md-4">
                 <div class="sidebar">
-                    <BlogSidebar v-for="post in posts "
-                     v-bind:key="post.id"
-                     :title="post.title"
-                     />
+                    <BlogSidebar />
                 </div>
             </div>
         </div>

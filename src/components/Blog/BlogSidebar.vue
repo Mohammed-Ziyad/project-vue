@@ -1,12 +1,15 @@
 <template>
     <div class="sidebar-widgets">
-       <h3 class="post-title">{{ title }}</h3>
-
+        {{title.toUpperCase()}}
     </div>
 </template>
 <script>
 export default {
-    props:['title'],
+    data(){
+        return{
+            title:'Testing Sidebar'
+        }
+    },
     name:'sidebarBlog'
 }
 </script>
