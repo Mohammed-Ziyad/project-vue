@@ -1,6 +1,6 @@
 <template>
   <div class="text-center"> 
-    <h1>{{ pageName }}</h1>
+    <h1>{{ pageName.toUpperCase()  }}</h1>
     <p v-font="'60'">{{ pageDescription }}</p>
     
   </div>

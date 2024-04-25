@@ -19,9 +19,7 @@
                 :content="post.content"
                 :auther="post.auther"
                 :category="post.category"
-                
-                />
-                
+                />    
                 </div>
             </div>
             <div class="col-md-4">
@@ -40,17 +38,7 @@ import BlogPosts  from '@/components/Blog/BlogPosts.vue';
 import BlogSidebar from '../components/Blog/BlogSidebar.vue';
 import JsonPosts from '../json/blog_post.json'
  
-// app.directive('highlight', {
-//     bind(el, binding) {
-//       el.style.backgroundColor = binding.value;
-//       el.addEventListener('mouseenter', function() {
-//         this.style.backgroundColor = binding.arg;
-//       });
-//       el.addEventListener('mouseleave', function() {
-//         this.style.backgroundColor = binding.value;
-//       });
-//     }
-//   });
+
   const vHighlight={
     mounted:(el , binding) => {
         el.style.backgroundColor = binding.value;
